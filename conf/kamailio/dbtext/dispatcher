@@ -6,4 +6,4 @@
 ### 20 - Registrar servers (if not locally handled)
 
 # setid(integer) destination(sip uri) flags (integer, optional)
-1 sip:127.0.0.1:11000 0
+1 sip:FREESWITCH 0

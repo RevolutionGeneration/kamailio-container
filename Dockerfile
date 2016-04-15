@@ -39,9 +39,12 @@ ADD conf/default/kamailio /etc/default/kamailio
 
 RUN ln -s /usr/local/lib64 /usr/lib64
 
+COPY start.sh /usr/local/bin/
+RUN  chmod +x /usr/local/bin/start.sh
+
 EXPOSE 5060 5061 7000 7001 5064 5065
 
-CMD ["kamailio -f /etc/kamailio/kamailio.cfg"]
+CMD ["/usr/local/bin/start.sh"]
 
 
 
